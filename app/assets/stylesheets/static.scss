@@ -34,7 +34,7 @@ Body {
 }
 
 .beers {
-  margin-top: 64px;
+  padding-top: 64px;
 }
 
 .beer {
@@ -55,6 +55,7 @@ Body {
 }
 
 .Beer-Logo {
+  float: left;
   width: 86px;
   height: 86px;
 }

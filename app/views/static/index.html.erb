@@ -19,7 +19,7 @@
     </div>
   <% end %>
   </div>
-  <div class="guest-beer">
+  <div class="guest-beers">
     <%= image_tag('guest-beer', class:"Guest-Beer") %>
     <div class="guest-beer-name"><%= @guest_beers.first.name %></div>
     <div class="guest-beer-price"><%= @guest_beers.first.price %></div>
@@ -28,26 +28,26 @@
 <div class="tier-pricing">
   <% @tiers.each do |tier| %>
     <div class="tier">
-      <div class="tier-name"><%= tier.name %></div>
+      <div class="tier-main-name"><%= tier.name %></div>
       <div class="taster">
-        <div class="taster-name">Taster</div>
-        <div class="taster-content">$<%= tier.taster%></div>
+        <div class="tier-name">Taster</div>
+        <div class="tier-content">$<%= tier.taster%></div>
       </div>
       <div class="half-pint">
-        <div class="half-pint-name">Half Pint</div>
-        <div class="half-pint-content">$<%= tier.half_pint %></div>
+        <div class="tier-name">Half Pint</div>
+        <div class="tier-content">$<%= tier.half_pint %></div>
       </div>
       <div class="pint">
-        <div class="pint-name">Pint</div>
-        <div class="pint-content">$<%= tier.pint%></div>
+        <div class="tier-name">Pint</div>
+        <div class="tier-content">$<%= tier.pint%></div>
       </div>
       <div class="crowler">
-        <div class="crowler-name">Crowler</div>
-        <div class="crowler-content">$<%= tier.crowler%></div>
+        <div class="tier-name">Crowler</div>
+        <div class="tier-content">$<%= tier.crowler%></div>
       </div>
       <div class="growler">
-        <div class="growler-name">Growler</div>
-        <div class="growler-content">$<%= tier.growler%></div>
+        <div class="tier-name">Growler</div>
+        <div class="tier-content">$<%= tier.growler%></div>
       </div>
     </div>
   <% end %>

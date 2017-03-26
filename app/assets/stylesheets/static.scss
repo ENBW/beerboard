@@ -9,7 +9,6 @@ Body {
   margin-top: 90px;
   margin-right: 90px;
   margin-left: 90px;
-  margin-bottom: 160px;
   width: 1740px;
   height: 834px;
   background-color: #ffffff;
@@ -42,6 +41,7 @@ Body {
   line-height: normal;
   letter-spacing: 1.6px;
   color: #233746;
+  float: right;
 }
 
 .guest-beer-price {
@@ -54,12 +54,14 @@ Body {
   letter-spacing: 2.7px;
   text-align: center;
   color: #233746;
+  float: right;
 }
 
 .Guest-Beer {
   width: 281px;
   height: 67px;
   object-fit: contain;
+  float: left;
 }
 
 .Line {
@@ -174,32 +176,74 @@ Body {
   color: #233746;
 }
 
+.tier-pricing {
+  margin-left: 90px;
+}
+
 .tier {
   margin-top: 25px;
   float: left;
   width: 868px;
 }
 
-.tier-name {
+.tier-main-name {
   float: left;
+  opacity: 0.65;
+  font-family: RobotoSlab;
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  color: #6e757b;
+  margin-top: 16px;
+}
+
+.tier-name {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #988561;
+}
+
+.tier-content {
+  font-family: RobotoSlab;
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  color: #233746;
 }
 
 .taster {
   float: left;
+  margin-left: 27px;
 }
 
 .half-pint {
   float: left;
+  margin-left: 58px;
 }
 
 .pint {
   float: left;
+  margin-left: 71px;
 }
 
 .crowler {
   float: left;
+  margin-left: 75px;
 }
 
 .growler {
   float: left;
+  margin-left: 61px;
 }

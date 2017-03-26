@@ -32,6 +32,30 @@ Body {
   height: 90px;
   float: right;
 }
+
+.guest-beer-name{
+  font-family: RobotoSlab;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  color: #233746;
+}
+
+.guest-beer-price {
+  font-family: RobotoSlab;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-align: center;
+  color: #233746;
+}
+
 .Guest-Beer {
   width: 281px;
   height: 67px;
@@ -148,4 +172,34 @@ Body {
   letter-spacing: 4.7px;
   text-align: center;
   color: #233746;
+}
+
+.tier {
+  margin-top: 25px;
+  float: left;
+  width: 868px;
+}
+
+.tier-name {
+  float: left;
+}
+
+.taster {
+  float: left;
+}
+
+.half-pint {
+  float: left;
+}
+
+.pint {
+  float: left;
+}
+
+.crowler {
+  float: left;
+}
+
+.growler {
+  float: left;
 }

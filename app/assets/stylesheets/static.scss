@@ -182,8 +182,15 @@ Body {
 
 .tier {
   margin-top: 25px;
-  float: left;
   width: 868px;
+}
+
+.tier:first-child {
+  float: left;
+}
+
+.tier:second-child {
+  float: right;
 }
 
 .tier-main-name {

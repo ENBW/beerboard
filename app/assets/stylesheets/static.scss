@@ -40,24 +40,31 @@ Body {
 .beer {
   float: left;
   width: 868px;
+  margin-bottom: 45px;
 }
 
 .beer-text {
+  margin-left: 20px;
   float: left;
 }
 
 .beer-abv {
-  float: left;
+  float: right;
+  margin-right: 50px;
+  margin-top: 8px;
 }
 
 .beer-tier {
-  float: left;
+  float: right;
+  margin-right: 20px;
+  margin-top: 8px;
 }
 
 .Beer-Logo {
   float: left;
   width: 86px;
   height: 86px;
+  margin-left: 36px;
 }
 
 .beer-name {

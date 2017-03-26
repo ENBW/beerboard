@@ -8,21 +8,21 @@
         <div class="beer-name"><%= beer.name%></div>
         <div class="beer-tagline"><%= beer.tag_line%></div>
       </div>
-      <div class="beer-abv">
-        <div class="abv-text">ABV</div>
-        <div class="abv-content"><%= beer.abv%>%</div>
-      </div>
       <div class="beer-tier">
         <div class="beer-tier-text">TIER</div>
         <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
+      </div>
+      <div class="beer-abv">
+        <div class="abv-text">ABV</div>
+        <div class="abv-content"><%= beer.abv%>%</div>
       </div>
     </div>
   <% end %>
   </div>
   <div class="guest-beers">
     <%= image_tag('guest-beer', class:"Guest-Beer") %>
-    <div class="guest-beer-name"><%= @guest_beers.first.name %></div>
     <div class="guest-beer-price"><%= @guest_beers.first.price %></div>
+    <div class="guest-beer-name"><%= @guest_beers.first.name %></div>
   </div>
 </div>
 <div class="tier-pricing">

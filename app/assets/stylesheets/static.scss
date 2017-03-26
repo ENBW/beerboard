@@ -33,6 +33,10 @@ Body {
   border: solid 2px #efeae1;
 }
 
+.beers {
+  margin-top: 64px;
+}
+
 .beer {
   float: left;
   width: 868px;
@@ -48,6 +52,11 @@ Body {
 
 .beer-tier {
   float: left;
+}
+
+.Beer-Logo {
+  width: 86px;
+  height: 86px;
 }
 
 .beer-name {

@@ -1,2 +1,20 @@
-<h1>Static#index</h1>
-<p>Find me in app/views/static/index.html.erb</p>
+<%= image_tag('beer-list', class:"Beer-List") %>
+<div class="White-Container">
+  <% @beers.each do |beer| %>
+    <div class="beer">
+      <div class="Beer-Logo"></div>
+      <div class="beer-text">
+        <div class="beer-name"><%= beer.name%></div>
+        <div class="beer-tagline"><%= beer.tag_line%></div>
+      </div>
+      <div class="beer-abv">
+        <div class="abv-text">ABV</div>
+        <div class="abv-content"><%= beer.abv%></div>
+      </div>
+      <div class="beer-tier">
+        <div class="beer-tier-text">TIER</div>
+        <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
+      </div>
+    </div>
+  <% end %>
+</div>

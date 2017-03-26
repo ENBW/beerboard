@@ -1,3 +1,34 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+Body {
+  object-fit: contain;
+  background-color: #f4efe6;
+  width: 1920px;
+  height: 1080px;
+}
+
+.White-Container {
+  margin-top: 90px;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-bottom: 160px;
+  width: 1740px;
+  height: 834px;
+  background-color: #ffffff;
+  box-shadow: 0 11px 34px 0 rgba(151, 145, 135, 0.16);
+}
+
+.Beer-List {
+  width: 422px;
+  height: 114px;
+  object-fit: contain;
+  float: left;
+  position: relative;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.Line {
+  width: 3px;
+  height: 731px;
+  border: solid 2px #efeae1;
+}

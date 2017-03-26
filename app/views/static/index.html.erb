@@ -30,25 +30,25 @@
 <div class="tier-pricing">
   <% @tiers.each do |tier| %>
     <div class="tier">
-      <div class="tier-main-name"><%= tier.name %></div>
+      <div class="tier-main-name"><%= tier.name.upcase %></div>
       <div class="taster">
-        <div class="tier-name">Taster</div>
-        <div class="tier-content">$<%= tier.taster%></div>
+        <div class="tier-name">TASTER</div>
+        <div class="tier-content">$<%= tier.taster %></div>
       </div>
       <div class="half-pint">
-        <div class="tier-name">Half Pint</div>
+        <div class="tier-name">HALF PINT</div>
         <div class="tier-content">$<%= tier.half_pint %></div>
       </div>
       <div class="pint">
-        <div class="tier-name">Pint</div>
+        <div class="tier-name">PINT</div>
         <div class="tier-content">$<%= tier.pint%></div>
       </div>
       <div class="crowler">
-        <div class="tier-name">Crowler</div>
+        <div class="tier-name">CROWLER</div>
         <div class="tier-content">$<%= tier.crowler%></div>
       </div>
       <div class="growler">
-        <div class="tier-name">Growler</div>
+        <div class="tier-name">GROWLER</div>
         <div class="tier-content">$<%= tier.growler%></div>
       </div>
     </div>

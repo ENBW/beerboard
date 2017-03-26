@@ -183,14 +183,11 @@ Body {
 .tier {
   margin-top: 25px;
   width: 868px;
-}
-
-.tier:first-child {
   float: left;
 }
 
 .tier:last-child {
-  float: right;
+  margin-left: 75px;
 }
 
 .tier-main-name {
@@ -228,6 +225,7 @@ Body {
   line-height: normal;
   letter-spacing: 2.5px;
   color: #233746;
+  text-align: center;
 }
 
 .taster {

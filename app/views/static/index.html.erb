@@ -1,9 +1,9 @@
-<%= image_tag('beer-list', class:"Beer-List") %>
+<%= image_tag('https://s3.amazonaws.com/enbw-assets/beer-list.svg', class:"Beer-List") %>
 <div class="White-Container">
   <div class="beers">
   <% @beers.each do |beer| %>
     <div class="beer">
-      <div class="Beer-Logo"></div>
+      <%= image_tag(beer.image, class:"Beer-Logo") %>
       <div class="beer-text">
         <div class="beer-name"><%= beer.name%></div>
         <div class="beer-tagline"><%= beer.tag_line%></div>
@@ -20,9 +20,11 @@
   <% end %>
   </div>
   <div class="guest-beers">
-    <%= image_tag('guest-beer', class:"Guest-Beer") %>
-    <div class="guest-beer-price"><%= @guest_beers.first.price %></div>
-    <div class="guest-beer-name"><%= @guest_beers.first.name %></div>
+    <% unless @guest_beers.empty? %>
+      <%= image_tag('https://s3.amazonaws.com/enbw-assets/guest-beer.svg', class:"Guest-Beer") %>
+      <div class="guest-beer-price"><%= @guest_beers.first.price %></div>
+      <div class="guest-beer-name"><%= @guest_beers.first.name %></div>
+    <% end %>
   </div>
 </div>
 <div class="tier-pricing">

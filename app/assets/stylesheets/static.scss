@@ -27,6 +27,17 @@ Body {
   transform: translate(-50%, -50%)
 }
 
+.guest-beers {
+  width: 838px;
+  height: 90px;
+  float: right;
+}
+.Guest-Beer {
+  width: 281px;
+  height: 67px;
+  object-fit: contain;
+}
+
 .Line {
   width: 3px;
   height: 731px;
@@ -88,6 +99,7 @@ Body {
   letter-spacing: normal;
   color: #6e757b;
   max-width: 500px;
+  margin-bottom: -30px;
 }
 
 .abv-text {

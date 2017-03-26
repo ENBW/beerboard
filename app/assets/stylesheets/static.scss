@@ -32,3 +32,77 @@ Body {
   height: 731px;
   border: solid 2px #efeae1;
 }
+
+.beer {
+  float: left;
+}
+
+.beer-name {
+  font-family: RobotoSlab;
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  color: #233746;
+}
+
+.beer-tagline {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6e757b;
+}
+
+.abv-text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d2b887;
+}
+
+.abv-content {
+  font-family: RobotoSlab;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #233746;
+}
+
+.beer-tier-text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d2b887;
+}
+
+.beer-tier-content {
+  font-family: RobotoSlab;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.7px;
+  text-align: center;
+  color: #233746;
+}

@@ -30,23 +30,28 @@ Body {
   float: right;
 }
 
+.guest-beers-total {
+  width: 300px;
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+
 .guest-beer-name{
   font-family: RobotoSlab;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1.6px;
   color: #233746;
-  float: right;
-  margin-right: 44px;
-  margin-top: 29px;
+  float: left;
 }
 
 .guest-beer-price {
   font-family: RobotoSlab;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -55,8 +60,6 @@ Body {
   text-align: center;
   color: #233746;
   float: right;
-  margin-right: 17px;
-  margin-top: 29px;
 }
 
 .Guest-Beer {

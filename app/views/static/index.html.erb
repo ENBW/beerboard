@@ -21,7 +21,7 @@
   </div>
   <div class="guest-beers">
     <% unless @guest_beers.empty? %>
-      <%= image_tag('wine-cider.png', class:"Guest-Beer") %>
+      <%= image_tag('wine-cider.svg', class:"Guest-Beer") %>
       <% @guest_beers.each do |guest_beer|%>
         <div class="guest-beers-total">
           <div class="guest-beer-name"><%= guest_beer.name.upcase %></div>

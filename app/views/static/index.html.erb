@@ -19,17 +19,20 @@
     </div>
   <% end %>
   </div>
-  <div class="guest-beers">
-    <% unless @guest_beers.empty? %>
-      <%= image_tag('wine-cider.svg', class:"Guest-Beer") %>
-      <% @guest_beers.each do |guest_beer|%>
-        <div class="guest-beers-total">
-          <div class="guest-beer-name"><%= guest_beer.name.upcase %></div>
-          <div class="guest-beer-price">$<%= guest_beer.price %></div>
-        </div>
+</div>
+<div class="guest-beers">
+  <% unless @guest_beers.empty? %>
+    <table>
+      <tr>
+        <td class="Guest-Beer"><%= image_tag('wine-cider.svg') %></td>
+        <% width = 80 / @guest_beers.count %>
+        <% @guest_beers.each do |guest_beer|%>
+          <td width="<%= width - 5%>%"><%= guest_beer.name %></td>
+          <td width="5%">$<%= guest_beer.price %></td>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+      </tr>
+    </table>
 </div>
 <div class="tier-pricing">
   <% @tiers.each do |tier| %>

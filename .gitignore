@@ -16,3 +16,7 @@
 # Ignore Byebug command history file.
 .byebug_history
 .idea/
+
+storage/
+.ruby-version
+.ruby-gemset

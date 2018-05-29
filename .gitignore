@@ -13,6 +13,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore bundle installed files
+vendor/bundle/*
+
 # Ignore Byebug command history file.
 .byebug_history
 .idea/

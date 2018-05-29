@@ -3,7 +3,11 @@
   <div class="beers">
   <% @beers.each do |beer| %>
     <div class="beer">
+      <% if beer.image.attached? %>
       <%= image_tag(beer.image, class:"Beer-Logo") %>
+      <% else %>
+      <%= image_tag('default-beer-image.svg', class: 'Beer-Logo') %>
+      <% end %>
       <div class="beer-text">
         <div class="beer-name"><%= beer.name%></div>
         <div class="beer-tagline"><%= beer.tag_line%></div>

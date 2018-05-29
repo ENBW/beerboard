@@ -1,24 +1,21 @@
-# README
+# East Nashville Beer Works Beer List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository powers a beer tap list at [East Nashville Beer Works](http://www.eastnashbeerworks.com/). It runs as a Rails 5 app on Heroku.
 
-Things you may want to cover:
+### Requirements
 
-* Ruby version
+- `bundler`
+- Postgres instance
 
-* System dependencies
+### Setup
 
-* Configuration
+```bash
+bundle install --path vendor/bundle
+bundle exec rake db:setup
+```
 
-* Database creation
+### Running Tests
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bundle exec rake
+```

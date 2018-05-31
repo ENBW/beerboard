@@ -1,239 +1,153 @@
-Body {
-  object-fit: contain;
+body {
   background-color: #f4efe6;
 }
 
-.White-Container {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1740px;
-  height: 818px;
-  background-color: #ffffff;
-  box-shadow: 0 11px 34px 0 rgba(151, 145, 135, 0.16);
+.beer-list-logo-container {
+  text-align: center;
+  margin-bottom: -60px;
+  padding-top: 15px;
 }
 
-.Beer-List {
+.beer-list-logo {
   width: 422px;
   height: 114px;
-  object-fit: contain;
-  float: left;
-  position: relative;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+}
+
+.white-container {
+  padding: 60px 20px 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  width: 91%;
+  background-color: #ffffff;
+  box-shadow: 0 11px 34px 0 rgba(151, 145, 135, 0.16);
 }
 
 .guest-beers {
   font-family: RobotoSlab;
   font-size: 28px;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1740px;
-}
-
-.guest-beers table {
-  background-color: white;
-  padding-left: 36px;
-  padding-bottom: 10px;
-  width: 100%;
-}
-
-.Guest-Beer {
-  width: 20%;
-  object-fit: contain;
-}
-
-.Line {
-  width: 3px;
-  height: 731px;
-  border: solid 2px #efeae1;
 }
 
 .beers {
-  padding-top: 48px;
-}
+  margin-bottom: 1em !important;
 
-.beer {
-  float: left;
-  width: 868px;
-  margin-bottom: 45px;
-}
+  .beer-logo-crop {
+    overflow:hidden;
+    .beer-logo {
+      padding-right: 1em;
+    }
+  }
 
-.beer:last-child {
-  margin-bottom: 0px;
-}
+  .beer-name {
+    font-family: RobotoSlab;
+    font-size: 34px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    color: #233746;
+  }
 
-.beer-text {
-  margin-left: 20px;
-  float: left;
-}
+  .beer-tagline {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6e757b;
+  }
 
-.beer-abv {
-  float: right;
-  margin-right: 34px;
-  margin-top: 8px;
-}
+  .abv-text {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d2b887;
+  }
 
-.beer-tier {
-  float: right;
-  margin-right: 20px;
-  margin-top: 8px;
-}
+  .abv-content {
+    font-family: RobotoSlab;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #233746;
+  }
 
-.Beer-Logo {
-  float: left;
-  width: 86px;
-  height: 86px;
-  margin-left: 36px;
-}
+  .beer-tier-text {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d2b887;
+  }
 
-.beer-name {
-  font-family: RobotoSlab;
-  font-size: 34px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2.5px;
-  color: #233746;
-}
-
-.beer-tagline {
-  font-family: Roboto;
-  font-size: 28px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #6e757b;
-  max-width: 500px;
-  margin-bottom: -30px;
-  width: 480px;
-}
-
-.abv-text {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #d2b887;
-}
-
-.abv-content {
-  font-family: RobotoSlab;
-  font-size: 36px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #233746;
-}
-
-.beer-tier-text {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #d2b887;
-}
-
-.beer-tier-content {
-  font-family: RobotoSlab;
-  font-size: 42px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 4.7px;
-  text-align: center;
-  color: #233746;
+  .beer-tier-content {
+    font-family: RobotoSlab;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: center;
+    color: #233746;
+  }
 }
 
 .tier-pricing {
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  width: 1740px;
-}
+  width: 91%;
+  .tier-main-name {
+    opacity: 0.65;
+    font-family: RobotoSlab;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2em;
+    letter-spacing: 2.5px;
+    color: #6e757b;
+  }
 
-.tier {
-  margin-left: 36px;
-  margin-top: 10px;
-  width: 832px;
-  float: left;
-}
+  .tier-name {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #988561;
+  }
 
-.tier-main-name {
-  float: left;
-  opacity: 0.65;
-  font-family: RobotoSlab;
-  font-size: 38px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2.5px;
-  color: #6e757b;
-  margin-top: 16px;
-}
-
-.tier-name {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #988561;
-}
-
-.tier-content {
-  font-family: RobotoSlab;
-  font-size: 38px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2.5px;
-  color: #233746;
-  text-align: center;
-}
-
-.taster {
-  float: left;
-  margin-left: 27px;
-}
-
-.half-pint {
-  float: left;
-  margin-left: 58px;
-}
-
-.pint {
-  float: left;
-  margin-left: 71px;
-}
-
-.crowler {
-  float: left;
-  margin-left: 75px;
-}
-
-.growler {
-  float: left;
-  margin-left: 61px;
+  .tier-content {
+    font-family: RobotoSlab;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    color: #233746;
+    text-align: center;
+  }
 }

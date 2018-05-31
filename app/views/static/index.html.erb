@@ -1,67 +1,92 @@
-<%= image_tag('https://s3.amazonaws.com/enbw-assets/beer-list.svg', class:"Beer-List") %>
-<div class="White-Container">
-  <div class="beers">
-  <% @beers.each do |beer| %>
-    <div class="beer">
-      <% if beer.image.attached? %>
-      <%= image_tag(beer.image, class:"Beer-Logo") %>
-      <% else %>
-      <%= image_tag('default-beer-image.svg', class: 'Beer-Logo') %>
-      <% end %>
-      <div class="beer-text">
-        <div class="beer-name"><%= beer.name%></div>
-        <div class="beer-tagline"><%= beer.tag_line%></div>
-      </div>
-      <div class="beer-tier">
-        <div class="beer-tier-text">TIER</div>
-        <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
-      </div>
-      <div class="beer-abv">
-        <div class="abv-text">ABV</div>
-        <div class="abv-content"><%= beer.abv%>%</div>
+<figure class="beer-list-logo-container">
+  <%= image_tag('beer-list.svg', class:"beer-list-logo") %>
+</figure>
+
+<div class="white-container">
+  <% @beers.each_slice(2) do |work| %>
+  <div class="columns beers">
+    <% work.each do |beer| %>
+    <div class="column is-half beer">
+      <div class="columns is-gapless">
+        <div class="column">
+          <figure class="image square beer-logo-crop">
+            <% if beer.image.attached? %>
+            <%= image_tag(beer.image, class:"beer-logo") %>
+            <% else %>
+            <%= image_tag('default-beer-image.svg', class: 'beer-logo') %>
+            <% end %>
+          </figure>
+        </div>
+        <div class="column is-three-fifths beer-text">
+          <div class="beer-name"><%= beer.name%></div>
+          <div class="beer-tagline"><%= beer.tag_line%></div>
+        </div>
+        <div class="column beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
+        </div>
+        <div class="column beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content"><%= beer.abv%>%</div>
+        </div>
       </div>
     </div>
+    <% end %>
+  </div>
   <% end %>
+
+  <div class="guest-beers">
+    <% unless @guest_beers.empty? %>
+    <div class="columns">
+      <div class="column">
+        <%= image_tag('wine-cider.svg') %>    
+      </div>
+      <% @guest_beers.each do |guest_beer|%>
+      <div class="column">
+        <div class="columns is-gapless">
+          <div class="column has-text-centered">
+            <%= guest_beer.name %>
+            <span class="has-text-grey-light">/</span>
+            $<%= guest_beer.price %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+    </div>
   </div>
 </div>
-<div class="guest-beers">
-  <% unless @guest_beers.empty? %>
-    <table>
-      <tr>
-        <td class="Guest-Beer"><%= image_tag('wine-cider.svg') %></td>
-        <% width = 80 / @guest_beers.count %>
-        <% @guest_beers.each do |guest_beer|%>
-          <td width="<%= width - 5%>%"><%= guest_beer.name %></td>
-          <td width="5%">$<%= guest_beer.price %></td>
-        <% end %>
-      <% end %>
-      </tr>
-    </table>
-</div>
+
 <div class="tier-pricing">
-  <% @tiers.each do |tier| %>
-    <div class="tier">
-      <div class="tier-main-name"><%= tier.name.upcase %></div>
-      <div class="taster">
-        <div class="tier-name">TASTER</div>
-        <div class="tier-content">$<%= tier.taster %></div>
+  <div class="columns">
+    <% @tiers.each do |tier| %>
+      <div class="column is-half">
+        <div class="columns">
+          <div class="column is-one-fifth tier-main-name">
+            <%= tier.name.upcase %>
+          </div>
+          <div class="column taster">
+            <div class="tier-name">TASTER</div>
+            <div class="tier-content">$<%= tier.taster %></div>
+          </div>
+          <div class="column half-pint">
+            <div class="tier-name">HALF PINT</div>
+            <div class="tier-content">$<%= tier.half_pint %></div>
+          </div>
+          <div class="column pint">
+            <div class="tier-name">PINT</div>
+            <div class="tier-content">$<%= tier.pint%></div>
+          </div>
+          <div class="column crowler">
+            <div class="tier-name">CROWLER</div>
+            <div class="tier-content">$<%= tier.crowler%></div>
+          </div>
+          <div class="column growler">
+            <div class="tier-name">GROWLER</div>
+            <div class="tier-content">$<%= tier.growler%></div>
+          </div>
+        </div>
       </div>
-      <div class="half-pint">
-        <div class="tier-name">HALF PINT</div>
-        <div class="tier-content">$<%= tier.half_pint %></div>
-      </div>
-      <div class="pint">
-        <div class="tier-name">PINT</div>
-        <div class="tier-content">$<%= tier.pint%></div>
-      </div>
-      <div class="crowler">
-        <div class="tier-name">CROWLER</div>
-        <div class="tier-content">$<%= tier.crowler%></div>
-      </div>
-      <div class="growler">
-        <div class="tier-name">GROWLER</div>
-        <div class="tier-content">$<%= tier.growler%></div>
-      </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

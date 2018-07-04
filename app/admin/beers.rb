@@ -1,5 +1,5 @@
 ActiveAdmin.register Beer do
-  permit_params :image
+  permit_params :tier, :name, :tag_line, :abv, :image, :active
 
   config.sort_order = 'position_asc' # assuming Widget.insert_at modifies the `position` attribute
   config.paginate   = false
@@ -34,7 +34,6 @@ ActiveAdmin.register Beer do
       row :tag_line
       row :abv, label: 'ABV'
       row :tier
-      row :position
       row :active
       row :image do |ad|
         if ad.image.attached?
@@ -52,7 +51,6 @@ ActiveAdmin.register Beer do
       f.input :name
       f.input :tag_line
       f.input :abv, label: 'ABV'
-      f.input :position
       f.input :active
       f.input :image, as: :file
     end

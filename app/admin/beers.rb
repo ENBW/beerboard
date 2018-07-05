@@ -4,6 +4,8 @@ ActiveAdmin.register Beer do
   config.sort_order = 'position_asc' # assuming Widget.insert_at modifies the `position` attribute
   config.paginate   = false
 
+  batch_action :destroy, false
+
   filter :name
   filter :tag_line
   filter :active

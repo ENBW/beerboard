@@ -24,5 +24,18 @@ Tier.create([
     updated_at: '2017-05-05T00:55:15.276Z',
     short_hand: '2',
     hide: false
+  },
+  {
+    id: 3,
+    name: 'Special',
+    taster: 3,
+    half_pint: 5,
+    pint: 99,
+    crowler: 99,
+    growler: 99,
+    created_at: '2018-07-24T00:05:42.640Z',
+    updated_at: '2018-07-24T00:05:42.640Z',
+    short_hand: '*',
+    hide: true
   }
 ])

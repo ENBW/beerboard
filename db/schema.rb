@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(version: 2018_07_13_220146) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "active"
-    t.string "untappd_beer_id"
     t.index ["tier_id"], name: "index_beers_on_tier_id"
   end
 

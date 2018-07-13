@@ -5,8 +5,8 @@ class StaticControllerTest < ActionDispatch::IntegrationTest
     get '/'
 
     assert_response :success
-    assert_select 'title', 'Beer List :: East Nashville Beer Works'
-    assert_select '.beer', 11
+    assert_select 'title', 'ENBW Beer List'
+    assert_select '.beer', 12
     assert_select '.beer .beer-name', 'Miro Miel', 1
   end
 end

@@ -1,462 +1,349 @@
+/* Hide Scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #f4efe6;
-    height: 100%;
+  background-color: #f4efe6;
+  height: 100%;
 }
-
-ul {
-	list-style-type: none;
-}
-/* Fonts */
 
 .beer-name {
-    font-family: Roboto;
-    font-weight: bold;
-    color: #233746;
-    letter-spacing: 0.125rem;
-    font-size: 1.875rem;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #233746;
+  letter-spacing: 0.125rem;
+  font-size: 1.7rem;
 }
 
 .beer-tagline {
     font-family: Roboto;
     color: #6e757b;
-    font-size: 1.5625rem;
+    line-height: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .abv-text,
 .beer-tier-text {
-    font-family: Roboto;
-    color: #d2b887;
-    font-size: 1.5rem;
+  font-family: Roboto;
+  color: #d2b887;
+  font-size: 1.5rem;
 }
 
 .abv-content,
 .beer-tier-content {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    text-align: center;
-    color: #233746;
-    font-size: 1.8rem;
-
+  font-family: RobotoSlab;
+  font-weight: bold;
+  text-align: center;
+  color: #233746;
+  font-size: 1.8rem;
 }
 
 .guest-name {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    text-align: right;
-    color: #233746;
-    margin-right: 1.25rem;
-	margin-top: -10px;
+  font-family: RobotoSlab;
+  font-weight: bold;
+  text-align: right;
+  color: #233746;
+  margin-right: 1.25rem;
+  margin-top: -10px;
 }
 
 .guest-price {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    color: #233746;
+  font-family: RobotoSlab;
+  font-weight: bold;
+  color: #233746;
 }
 
 .tier-main-name {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    font-size: 1.875rem;
-    color: #6e757b;
-    margin-top: .5rem
+  font-family: RobotoSlab;
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: #6e757b;
+  margin-top: .5rem
 }
 
 .tier-name {
-    font-family: Roboto;
-    color: #988561;
-    text-align: center;
+  font-family: Roboto;
+  color: #988561;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: -0.2rem;
 }
 
 .tier-content {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #233746;
-    text-align: center;
+  font-family: RobotoSlab;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #233746;
+  text-align: center;
 }
 
-
-
-
-
-/* Layout */
-
 a:link {
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
 }
 
 #beer-list {
-	display: block;
-	margin: 0 auto;
-    width: 50%;
-    height: 7.125rem;
+  display: block;
+  margin: 0.25rem auto 0 auto;
+  width: 50%;
+  height: 7.125rem;
 }
 
 #white-container {
-    background-color: #ffffff;
-    margin: -3.75rem auto;
-    width: 97%;
-    box-shadow: 0 0.6875rem 32.125rem 0 rgba(151,145,135,0.16);
+  background-color: #ffffff;
+  margin: -4rem auto -4rem auto;
+  width: 97%;
+  box-shadow: 0 0.6875rem 32.125rem 0 rgba(151,145,135,0.16);
 }
 
 #beers {
-	display: flex;
-	flex-flow: row wrap;
-	align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
 }
-
-/*.beer:nth-child(even) {
-	border-left: solid 2px #ede5d7;
-	margin-left: -12px;
-	padding-left: 6px
-}*/
 
 .beer {
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
-
-/* Rule for Modal Highlighting
-.beer:hover {
-	cursor: pointer;
-}
-
- .beer:hover .beer-name {
-	color: #18bfef;
-}*/
 
 .beer:nth-child(-n+2){
-	margin-top: 3.75rem;
+  margin-top: 3.75rem;
 }
 
 .beer-logo {
-	height: 6.71875rem;
-	width: 6.71875rem;
-	margin-top:-1rem;
+  height: 6.71875rem;
+  width: 6.71875rem;
+  margin-top:-1rem;
 }
 
 .enbw-logo {
-	height: 5.546875rem;
-	width: 4.374375rem;
-	padding-right: 0.9375rem;
-	padding-left: 1.25rem;
+  height: 5.546875rem;
+  width: 4.374375rem;
+  padding-right: 0.9375rem;
+  padding-left: 1.25rem;
 }
 
 .logo-and-text {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .abv-and-tier {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .beer-abv,
 .beer-tier {
-	padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 #wine-cider {
-	justify-content: center
+  justify-content: center
 }
 
 #wine-cider-list {
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	justify-content: center;
-	margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .guest-total {
-	display: flex;
-	flex-direction: row;
-	padding-right: 2rem;
-	justify-content: right;
-	margin-left: auto;
-	font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  justify-content: right;
+  margin-left: auto;
+  font-size: 1rem;
 }
 
 .beer:last-child {
-	margin-bottom: 1.75rem;
-	margin-left: auto;
-	cursor: auto;
-}
-
-/* adjust wine-cider-list if there are 12 beers */
-.beer:first-child:nth-last-child(13) ~ .beer:last-child {
-	margin-top: -1.3rem;
+  margin-bottom: 1.75rem;
+  margin-left: auto;
+  cursor: auto;
 }
 
 .tier-pricing {
-	display: flex;
-	cursor: default;
-	margin: 5rem auto;
-	width: 92%;
+  display: flex;
+  cursor: default;
+  margin: 5rem auto;
+  width: 92%;
 }
 
 .tier {
-	display: flex;
-	margin: -.75rem auto;
-    width: 50%;
-    height: 7.125rem;
-    justify-content: space-around;
+  display: flex;
+  margin: -.75rem auto;
+  width: 50%;
+  height: 7.125rem;
+  justify-content: space-around;
 }
 
 /* Modals */
 
 .modal{
-	display:none;
-	position: fixed;
-	z-index: 1;
-	left:0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.7);
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content{
-	background-color: #f4f4f4;
-	margin: 10% auto 0;
-	padding: 1.25rem;
-	width: 70%;
-	max-width: 800px;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 1.25rem 0 rgba(0, 0, 0, 0.17);
+  background-color: #f4f4f4;
+  margin: 10% auto 0;
+  padding: 1.25rem;
+  width: 70%;
+  max-width: 800px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 1.25rem 0 rgba(0, 0, 0, 0.17);
 }
 
 .closeBtn{
-	color: #ccc;
-	float: right;
-	font-size: 1.875rem;
+  color: #ccc;
+  float: right;
+  font-size: 1.875rem;
 }
 
 .closeBtn:hover, .closeBtn:focus{
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-heading,
 .modal-subheading,
 .modal-footer {
-	text-align: center;
+  text-align: center;
 }
 
 .modal-heading,
 .modal-subheading,
 .modal-paragraph {
-	font-family: RobotoSlab;
-    font-weight: bold;
-    color: #233746;
+  font-family: RobotoSlab;
+  font-weight: bold;
+  color: #233746;
 }
 
 .modal-heading {
-	margin-bottom: -1.5625rem;
+  margin-bottom: -1.5625rem;
 }
 
 .modal-paragraph{
-	text-align: justify;
+  text-align: justify;
 }
 
 .modal-footer {
-	font-family: Roboto;
-    color: #6e757b;
+  font-family: Roboto;
+  color: #6e757b;
 }
 
 .modal-logo {
-	height: 10.75rem;
-	width: 10.75rem;
-	display: block;
-	margin: 0 auto;
-    width: 50%;
+  height: 10.75rem;
+  width: 10.75rem;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
-/* Type */
-
 @media screen and (min-height: 800px) {
-	#white-container {
-		height: 82%;
-	}
+  #white-container {
+    height: 82%;
+  }
 }
 
 @media screen and (max-width: 1920px) {
 
-	html {
-		font-size: 14.5pt;
-	}
+  html {
+  font-size: 14.5pt;
+  }
 }
 
 @media screen and (max-width: 1450px) {
-
-	html {
-		font-size: 11pt;
-	}
-
+  html {
+    font-size: 11pt;
+  }
 }
 
 @media screen and (max-width: 800px) {
 
-	html {
-		font-size: 9.5pt;
-	}
+  html {
+  font-size: 9.5pt;
+  }
 }
 
 @media screen and (max-width: 450px) {
 
-	html {
-		font-size: 8pt;
-	}
+  html {
+  font-size: 8pt;
+  }
 
 }
 
-
 @media only screen and (max-width: 999px) {
+  #beers {
+  	flex-direction: column;
+  }
 
-/*	body {
-		position: static;
-	}*/
+  .beer {
+    width: 100%;
+  }
 
-    #beers {
-    	flex-direction: column;
-    }
+  .beer:nth-child(2){
+    margin-top: 0;
+  }
 
-    .beer {
-	width: 100%;
-	}
+  .tier-pricing {
+    flex-direction: column;
+    width: 90%;
+  }
 
-	.beer:nth-child(2){
-		margin-top: 0;
-	}
+  .tier {
+    width: 100%;
+  }
 
-	.tier-pricing {
-		flex-direction: column;
-		width: 90%;
-	}
+  #wine-cider {
+    padding-left: 0.9375rem;
+  }
 
-	.tier {
-		width: 100%;
-	}
+  #white-container {
+    width:100%;
+    height: auto;
+  }
 
-	#wine-cider {
-		padding-left: 0.9375rem;
-	}
-
-	#white-container {
-		width:100%;
-		height: auto;
-	}
-
-	.tier:nth-child(even){
-		border-top: solid 0.125rem #6e757b;
-		padding-top: 2rem;
-	}
-
+  .tier:nth-child(even){
+    border-top: solid 0.125rem #6e757b;
+    padding-top: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-	#beers {
-		align-content: space-between;
-		height: 100%;
-	}
+  #beers {
+    align-content: space-between;
+    height: 100%;
+  }
 }
 
 @media (device-width: 100vw) and (device-height: 100vh) {
-	html {
-		font-size: 16.5pt;
-	}
+  html {
+    font-size: 16.5pt;
+  }
 
-	#white-container {
-		height: 82%;
-		width: 97%;
-	}
-}
-
-.thirteenBeers *{
-
-}
-
-#hidden {
-    display: none
-}
-
-#beerSelection {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 3rem;
-}
-
-.customBeers,
-.woodlandStreet {
-	display: flex;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.evenccb {
-	margin-left: 3px;
-}
-
-#btn {
-    background-color: #988561;
-    color: #ffffff;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 40px 60px;
-    border-radius: 8px;
-}
-#btn:hover {
-    background-color: #233746;
-    color: white;
-}
-label {
-    font-size: 30px;
-}
-
-input[type=checkbox]
-{
- -webkit-transform: scale(2);
-}
-
-.beer-selection {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #233746;
-    text-align: left;
-}
-
-.beer-selection-header {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    font-size: 2.3rem;
-    color: #000;
-    text-align: left;
-}
-
-.beer-index-header {
-    font-family: RobotoSlab;
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: #000;
-    text-align: left;
+  #white-container {
+    height: 82%;
+    width: 97%;
+  }
 }

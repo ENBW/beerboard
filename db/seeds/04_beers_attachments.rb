@@ -117,3 +117,39 @@ beer.image.attach(
   filename: 'Krautrock.svg'
 )
 beer.save
+
+beer = Beer.find_by(name: 'Augustfest')
+beer.image.attach(
+  io: File.open(Rails.root.join(
+                  'db',
+                  'seeds',
+                  'beers-attachments',
+                  'Augustfest.svg'
+  )),
+  filename: 'Augustfest.svg'
+)
+beer.save
+
+beer = Beer.find_by(name: 'Brut Willis')
+beer.image.attach(
+  io: File.open(Rails.root.join(
+                  'db',
+                  'seeds',
+                  'beers-attachments',
+                  'Brut-Willis.svg'
+  )),
+  filename: 'Brut-Willis.svg'
+)
+beer.save
+
+beer = Beer.find_by(name: 'Coconut Cream Pie')
+beer.image.attach(
+  io: File.open(Rails.root.join(
+                  'db',
+                  'seeds',
+                  'beers-attachments',
+                  'Coconut-Cream-Pie.svg'
+  )),
+  filename: 'Coconut-Cream-Pie.svg'
+)
+beer.save

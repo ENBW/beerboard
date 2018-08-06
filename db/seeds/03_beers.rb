@@ -5,8 +5,6 @@ Beer.create([
     abv: 5.2,
     tier_id: 1,
     position: nil,
-    created_at: '2017-03-26T16:49:04.698Z',
-    updated_at: '2018-02-05T22:26:44.777Z',
     active: true
   },
   {
@@ -15,8 +13,6 @@ Beer.create([
     abv: 6.2,
     tier_id: 1,
     position: nil,
-    created_at: '2017-03-26T16:49:29.804Z',
-    updated_at: '2018-02-05T22:29:48.850Z',
     active: true
   },
   {
@@ -25,8 +21,6 @@ Beer.create([
     abv: 4.5,
     tier_id: 1,
     position: nil,
-    created_at: '2017-03-26T16:50:50.655Z',
-    updated_at: '2018-02-05T22:22:17.387Z',
     active: false
   },
   {
@@ -35,8 +29,6 @@ Beer.create([
     abv: 5.2,
     tier_id: 1,
     position: nil,
-    created_at: '2017-03-26T16:51:15.504Z',
-    updated_at: '2018-02-05T22:26:03.699Z',
     active: true
   },
   {
@@ -45,8 +37,6 @@ Beer.create([
     abv: 6.5,
     tier_id: 2,
     position: nil,
-    created_at: '2017-03-26T16:51:34.285Z',
-    updated_at: '2018-03-08T21:45:37.204Z',
     active: true
   },
   {
@@ -55,8 +45,6 @@ Beer.create([
     abv: 7.0,
     tier_id: 2,
     position: nil,
-    created_at: '2017-03-26T16:51:56.892Z',
-    updated_at: '2018-03-01T15:50:56.375Z',
     active: true
   },
   {
@@ -65,8 +53,6 @@ Beer.create([
     abv: 7.2,
     tier_id: 2,
     position: nil,
-    created_at: '2017-04-05T22:38:59.946Z',
-    updated_at: '2018-03-26T20:29:45.478Z',
     active: false
   },
   {
@@ -75,8 +61,6 @@ Beer.create([
     abv: 5.2,
     tier_id: 1,
     position: nil,
-    created_at: '2018-03-13T19:28:42.093Z',
-    updated_at: '2018-03-17T15:06:37.946Z',
     active: true
   },
   {
@@ -85,8 +69,6 @@ Beer.create([
     abv: 6.0,
     tier_id: 1,
     position: nil,
-    created_at: '2017-09-15T19:16:43.130Z',
-    updated_at: '2018-04-06T16:53:05.064Z',
     active: false
   },
   {
@@ -95,8 +77,6 @@ Beer.create([
     abv: 5.5,
     tier_id: 1,
     position: nil,
-    created_at: '2018-02-14T22:35:29.709Z',
-    updated_at: '2018-02-14T22:35:29.709Z',
     active: false
   },
   {
@@ -105,8 +85,6 @@ Beer.create([
     abv: 4.5,
     tier_id: 1,
     position: nil,
-    created_at: '2017-03-26T16:52:30.904Z',
-    updated_at: '2018-03-13T19:27:52.538Z',
     active: false
   },
   {
@@ -115,8 +93,6 @@ Beer.create([
     abv: 8.5,
     tier_id: 3,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
   },
   {
@@ -125,8 +101,6 @@ Beer.create([
     abv: 6.0,
     tier_id: 1,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
   },
   {
@@ -135,8 +109,6 @@ Beer.create([
     abv: 5.2,
     tier_id: 2,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
   },
   {
@@ -145,8 +117,6 @@ Beer.create([
     abv: 5.6,
     tier_id: 2,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
   },
   {
@@ -155,8 +125,6 @@ Beer.create([
     abv: 4.5,
     tier_id: 1,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
   },
   {
@@ -165,8 +133,30 @@ Beer.create([
     abv: 5.6,
     tier_id: 2,
     position: nil,
-    created_at: '2017-07-04T00:03:30.904Z',
-    updated_at: '2017-07-04T00:03:30.904Z',
     active: true
+  },
+  {
+    name: 'Coconut Cream Pie',
+    tag_line: 'Toasted Coconut and Lactose',
+    abv: 7.0,
+    tier_id: 2,
+    position: nil,
+    active: false
+  },
+  {
+    name: 'Trigo Azul',
+    tag_line: 'Blueberry Wheat Ale',
+    abv: 4.2,
+    tier_id: 1,
+    position: nil,
+    active: false
+  },
+  {
+    name: 'Augustfest',
+    tag_line: 'Blackberry Wheat',
+    abv: 4.2,
+    tier_id: 1,
+    position: nil,
+    active: false
   }
 ])

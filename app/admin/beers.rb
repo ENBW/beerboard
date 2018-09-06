@@ -1,5 +1,5 @@
 ActiveAdmin.register Beer do
-  permit_params :tier, :name, :tag_line, :abv, :image, :active
+  permit_params :tier_id, :name, :tag_line, :abv, :image, :active
 
   config.sort_order = 'position_asc' # assuming Widget.insert_at modifies the `position` attribute
   config.paginate   = false

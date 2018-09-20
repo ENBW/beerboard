@@ -17,21 +17,21 @@ body {
   font-weight: bold;
   color: #233746;
   letter-spacing: 0.125rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .beer-tagline {
     font-family: Roboto;
     color: #6e757b;
-    line-height: 1.3rem;
-    font-size: 1.4rem;
+    line-height: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .abv-text,
 .beer-tier-text {
   font-family: Roboto;
   color: #d2b887;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .abv-content,
@@ -40,7 +40,7 @@ body {
   font-weight: bold;
   text-align: center;
   color: #233746;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .guest-name {
@@ -114,6 +114,7 @@ a:link {
   display: flex;
   justify-content: space-between;
   width: 50%;
+  margin-bottom: 0.5rem;
 }
 
 .beer:nth-child(-n+2){
@@ -121,8 +122,8 @@ a:link {
 }
 
 .beer-logo {
-  height: 6.71875rem;
-  width: 6.71875rem;
+  height: 5rem;
+  width: 5rem;
   margin-top:-1rem;
 }
 

@@ -1,33 +1,31 @@
 <%= image_tag ("beer-list.svg"), :id => "beer-list" %>
 <div id="white-container">
   <div id="beers">
-
-  <% @beers.each do |beer| %>
-		<div class= "beer">
-			<div class="logo-and-text">
-				<% if beer.image.attached? %>
-				<%= image_tag(beer.image, class: 'beer-logo') %>
-				<% else %>
-				<%= image_tag('default-beer-image.svg', class: 'beer-logo') %>
-				<% end %>
-				<div class="beer-text">
-					<div class="beer-name"><%= beer.name %></div>
-					<div class="beer-tagline"><%= beer.tag_line %></div>
-				</div>
-			</div>
-		        <div class="abv-and-tier">
-		        	<div class="beer-abv">
-		          		<div class="abv-text">ABV</div>
-				        <div class="abv-content"><%= beer.abv %>%</div>
-		        	</div>
-		       		<div class="beer-tier">
-		         		<div class="beer-tier-text">TIER</div>
-		          		<div class="beer-tier-content"><%= beer.tier.short_hand %></div>
-		        	</div>
-		      	</div>
-		</div>
-  <% end %>
-
+    <% @beers.each do |beer| %>
+    <div class="beer">
+      <div class="logo-and-text">
+        <% if beer.image.attached? %>
+        <%= image_tag(beer.image, class: 'beer-logo') %>
+        <% else %>
+        <%= image_tag('default-beer-image.svg', class: 'beer-logo') %>
+        <% end %>
+        <div class="beer-text">
+          <div class="beer-name"><%= beer.name %></div>
+          <div class="beer-tagline"><%= beer.tag_line %></div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+        <div class="abv-text">ABV</div>
+      <div class="abv-content"><%= beer.abv %>%</div>
+        </div>
+        <div class="beer-tier">
+            <div class="beer-tier-text">TIER</div>
+            <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
+        </div>
+      </div>
+    </div>
+    <% end %>
 
     <!-- Wine & Cider List -->
     <div id="wine-cider" class="beer">
@@ -43,7 +41,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 <div class="tier-pricing">
@@ -51,7 +48,7 @@
     <div class="tier">
       <div class="tier-main-name"><%= tier.name.upcase %></div>
       <div class="taster">
-        <div class="tier-name">TASTER</div>
+        <div class="tier-name">5 OZ</div>
         <div class="tier-content">$<%= tier.taster %></div>
       </div>
       <div class="half-pint">
@@ -71,6 +68,5 @@
         <div class="tier-content">$<%= tier.growler %></div>
       </div>
     </div>
-	<% end %>
-    </div>
+  <% end %>
 </div>

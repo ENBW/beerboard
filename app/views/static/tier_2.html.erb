@@ -1,0 +1,72 @@
+<%= image_tag ("beer-list.svg"), :id => "beer-list" %>
+<div id="white-container white-container-vertical">
+  <div id="beers">
+    <% @beers.each do |beer| %>
+    <% next unless beer.active and beer.tier.name == 'Tier 2' %>
+    <div class="beer">
+      <div class="logo-and-text">
+        <% if beer.image.attached? %>
+        <%= image_tag(beer.image, class: 'beer-logo') %>
+        <% else %>
+        <%= image_tag('default-beer-image.svg', class: 'beer-logo') %>
+        <% end %>
+        <div class="beer-text">
+          <div class="beer-name"><%= beer.name %></div>
+          <div class="beer-tagline"><%= beer.tag_line %></div>
+        </div>
+      </div>
+      <div class="abv-and-tier">
+        <div class="beer-abv">
+          <div class="abv-text">ABV</div>
+          <div class="abv-content"><%= beer.abv %>%</div>
+        </div>
+        <div class="beer-tier">
+          <div class="beer-tier-text">TIER</div>
+          <div class="beer-tier-content"><%= beer.tier.short_hand %></div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    <div id="wine-cider" class="beer">
+    <%= image_tag ("wine-cider.svg"), :id=> "wine-cider", :class=> "wine-cider-img" %>
+      <div id="wine-cider-list">
+        <div class="wine-cider-child">
+          <div class="guest-name">Cabernet Sauvignon $8</div>
+          <div class="guest-name">Malbec $8</div>
+          <div class="guest-name">Sauvignon Blanc $8</div>
+          <div class="guest-name">Sparkling Ros‌&eacute; $9</div>
+        </div>
+        <div class="wine-cider-child">
+          <div class="guest-name">Roots Original Cider $6</div>
+          <div class="guest-name">Dry Ros‌&eacute; Cider $6</div>
+          <div class="guest-name">Blackberry Cider $6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tier-pricing">
+  <div id="tier-2" class="tier">
+    <div class="tier-main-name">TIER 2</div>
+    <div class="taster">
+      <div class="tier-name">5 OZ</div>
+      <div class="tier-content">$3</div>
+    </div>
+    <div class="half-pint">
+      <div class="tier-name">HALF PINT</div>
+      <div class="tier-content">$4</div>
+    </div>
+    <div class="pint">
+      <div class="tier-name">PINT</div>
+      <div class="tier-content">$6</div>
+    </div>
+    <div class="crowler">
+      <div class="tier-name">CROWLER</div>
+      <div class="tier-content">$11</div>
+    </div>
+    <div class="growler">
+      <div class="tier-name">GROWLER FILL</div>
+      <div class="tier-content">$16</div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-<%= image_tag ("beer-list.svg"), :id => "beer-list" %>
-<div id="white-container white-container white-container-vertical">
-  <div id="beers">
+<%= image_tag ("beer-list.svg"), class: "beer-list" %>
+<div class="white-container white-container-vertical">
+  <div class="beers">
     <% @beers.each do |beer| %>
     <% next unless beer.active and beer.tier.name == 'Tier 1' %>
     <div class="beer">

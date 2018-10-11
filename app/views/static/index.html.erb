@@ -1,6 +1,6 @@
-<%= image_tag ("beer-list.svg"), :id => "beer-list" %>
-<div id="white-container">
-  <div id="beers">
+<%= image_tag ("beer-list.svg"), class: "beer-list" %>
+<div class="white-container">
+  <div class="beers">
     <% @beers.each do |beer| %>
     <div class="beer">
       <div class="logo-and-text">
@@ -28,8 +28,8 @@
     <% end %>
 
     <!-- Wine & Cider List -->
-    <div id="wine-cider" class="beer">
-        <div id="wine-cider-list">
+    <div class="wine-cider" class="beer">
+        <div class="wine-cider-list">
           <div class="guest-total">
             <div class="guest-name">JACK'S HARD CIDER $5</div>
           </div>

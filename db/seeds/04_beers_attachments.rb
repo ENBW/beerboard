@@ -201,3 +201,15 @@ beer.image.attach(
   filename: 'Woodland-St.svg'
 )
 beer.save
+
+beer = Beer.find_by(name: 'Fire of the Century')
+beer.image.attach(
+  io: File.open(Rails.root.join(
+                  'db',
+                  'seeds',
+                  'beers-attachments',
+                  'Fire-Century.svg'
+  )),
+  filename: 'Fire-Century.svg'
+)
+beer.save

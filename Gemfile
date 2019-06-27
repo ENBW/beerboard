@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.9'
 
 gem 'cloudinary', require: false
 gem 'activestorage-cloudinary-service'

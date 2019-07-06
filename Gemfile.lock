@@ -132,9 +132,10 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    listen (3.0.8)
+    listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -209,6 +210,7 @@ GEM
       netrc (~> 0.8)
     ruby-vips (2.0.14)
       ffi (~> 1.9)
+    ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -278,7 +280,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder (~> 2.5)
   jquery-rails
-  listen (~> 3.0.5)
+  listen (~> 3.1.5)
   pg (~> 0.18)
   pry-rails
   puma (~> 3.0)

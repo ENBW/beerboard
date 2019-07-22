@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'cloudinary', require: false
 gem 'activestorage-cloudinary-service'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.9'
 gem 'acts_as_list'
 gem 'activeadmin_reorderable'
 

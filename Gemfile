@@ -13,7 +13,7 @@ gem 'rails', '~> 5.2.0'
 gem "bootsnap", ">= 1.1.0", require: false
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 4.1'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 5.0'
 gem 'devise'

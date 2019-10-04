@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "~> 2.4.1"
+ruby "~> 2.5.3"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -21,7 +21,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
-gem 'cloudinary', require: false
+gem 'cloudinary'
 gem 'activestorage-cloudinary-service'
 gem 'image_processing', '~> 1.9'
 gem 'acts_as_list'

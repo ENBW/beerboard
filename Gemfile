@@ -12,7 +12,7 @@ gem 'activeadmin'
 gem 'rails', '~> 5.2.0'
 gem "bootsnap", ">= 1.1.0", require: false
 gem 'pg', '~> 1.1'
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.2'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 5.0'
@@ -30,7 +30,7 @@ gem 'activeadmin_reorderable'
 gem 'pry-rails'
 
 group :development do
-  gem 'listen', '~> 3.1.5'
+  gem 'listen', '~> 3.2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

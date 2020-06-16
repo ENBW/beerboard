@@ -4,12 +4,15 @@ sudo: false
 rvm:
   - 2.5.3
 
+before_install:
+  - gem install bundler
+
 install: bundle install --retry=3
 
 before_script:
-    - cp config/database.yml.dist config/database.yml
-    - cp .env-dist .env
-    - bundle exec rake db:setup
+  - cp config/database.yml.dist config/database.yml
+  - cp .env-dist .env
+  - bundle exec rake db:setup
 
 services:
   - postgresql

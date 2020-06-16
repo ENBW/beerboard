@@ -30,6 +30,7 @@ gem 'image_processing', '~> 1.9'
 gem 'pry-rails'
 
 group :development do
+  gem 'bundler', '~> 2.1.4'
   gem 'listen', '~> 3.2.0'
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring

@@ -10,9 +10,7 @@ before_install:
 install: bundle install --retry=3
 
 before_script:
-  - cp config/database.yml.dist config/database.yml
-  - cp .env-dist .env
-  - bundle exec rake db:setup
+  - psql -c 'create database enbw_test;' -U postgres
 
 services:
   - postgresql
